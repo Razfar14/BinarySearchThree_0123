@@ -56,5 +56,15 @@ class BinaryThree{
         Node* currentNode = nullptr;
         search(x, parent, currentNode);
 
+        //step 5: if parent is null(three is empty)
+        if (parent == nullptr){
+
+            //5a: markthe new node as root
+            ROOT = newNode;
+
+            //5b: return from the function
+            return;
+        }
+
 
 
