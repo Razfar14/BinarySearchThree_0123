@@ -36,5 +36,10 @@ class BinaryThree{
     }
 }
   
+    void insert(){
+        int x;
+        cout << "Masukkan Nilai : ";
+        cin >> x;
+
 
 
