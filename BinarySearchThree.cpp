@@ -117,5 +117,20 @@ class BinaryThree{
         preorder(ptr->rightChild); // Traverse the right subtree
     }
 
+        void postorder(Node* ptr){
+            if(isEmpty()){
+                cout << "tree is empty." << endl;
+                return; // If the tree is empty, return
+            }
+            if(ptr == nullptr){
+                return; // If the current node is null, return
+            }
+    
+            postorder(ptr->leftChild); // Traverse the left subtree
+            postorder(ptr->rightChild); // Traverse the right subtree
+            cout << ptr->info << " "; // Visit the current node
+    }   
+};
+
 
 
