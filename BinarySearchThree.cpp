@@ -14,5 +14,9 @@ class Node{
     }
 };
 
+class BinaryThree{
+    public:
+    Node* ROOT;
+
 
 
