@@ -85,9 +85,23 @@ class BinaryThree{
         }
      } 
      bool isEmpty(){
-        //This function checks if the binary three is empty
+        //This function checks if the binary tree is empty
         return ROOT == nullptr; // Return true if root is null, false otherwise
      }
      
+     void inorder(Node* ptr){
+        if(isEmpty()){
+            cout << "tree is empty." << endl;
+            return; // If the tree is empty, return
+        }
+        if(ptr == nullptr){
+            return; // If the current node is null, return
+        }
+
+        inorder(ptr->leftChild); // Traverse the left subtree
+        cout << ptr->info << " "; // Visit the current node
+        inorder(ptr->rightChild); // Traverse the right subtree
+     }
+    
 
 
