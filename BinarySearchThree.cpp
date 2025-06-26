@@ -66,5 +66,14 @@ class BinaryThree{
             return;
         }
 
+        //step 6: if the value in the data field of the new node is less than the parent 
+        if (x < parent->info){
+            //6a: make the left child of the parent point to the new node
+            parent->leftChild = newNode;
+
+            //6b: return from the function
+            return;
+        } 
+
 
 
