@@ -41,5 +41,8 @@ class BinaryThree{
         cout << "Masukkan Nilai : ";
         cin >> x;
 
+        //step 1: Allocate memory for the new node
+        Node* newNode = new Node();
+
 
 
