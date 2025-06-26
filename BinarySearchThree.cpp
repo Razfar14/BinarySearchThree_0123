@@ -44,5 +44,7 @@ class BinaryThree{
         //step 1: Allocate memory for the new node
         Node* newNode = new Node();
 
+        //step 2: Assign the value to the new node
+        newNode->info = x;
 
 
