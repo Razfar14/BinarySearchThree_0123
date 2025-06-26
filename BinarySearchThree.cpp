@@ -47,4 +47,9 @@ class BinaryThree{
         //step 2: Assign the value to the new node
         newNode->info = x;
 
+        //step 3: Make the left and right child of the new node null
+        newNode->leftChild = nullptr;
+        newNode->rightChild = nullptr;
+
+
 
