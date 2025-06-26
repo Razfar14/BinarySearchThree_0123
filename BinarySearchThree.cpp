@@ -84,5 +84,10 @@ class BinaryThree{
             return;
         }
      } 
+     bool isEmpty(){
+        //This function checks if the binary three is empty
+        return ROOT == nullptr; // Return true if root is null, false otherwise
+     }
+     
 
 
