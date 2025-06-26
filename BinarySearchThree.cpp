@@ -18,5 +18,9 @@ class BinaryThree{
     public:
     Node* ROOT;
 
+    BinaryThree(){
+        ROOT = nullptr; // Initialize the root to null
+    }
+
 
 
